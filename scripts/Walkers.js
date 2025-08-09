@@ -2,6 +2,15 @@ import { getWalkers } from "./database.js"
 
 const walkers = getWalkers()
 
+document.addEventListener(
+    "click",
+    (e) => {
+        const walker = e.target
+        
+        window.alert(`This walker works in ${walker.dataset.city}`)
+    }
+)
+
 export const Walkers = () => {
     let walkerHTML = "<ul>"
 
