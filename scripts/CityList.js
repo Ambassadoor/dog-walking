@@ -7,7 +7,11 @@ export const CityList = () => {
     let citiesHTML = "<ul>"
 
     for (const currentWalker of walkers) {
-        citiesHTML += `<li>${currentWalker.city}</li>`
+        citiesHTML += `
+            <li
+                data-type="city">
+                    ${currentWalker.city}
+            </li>`
     }
 
     citiesHTML += "</ul>"
