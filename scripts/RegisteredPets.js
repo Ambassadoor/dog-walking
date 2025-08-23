@@ -9,10 +9,9 @@ document.addEventListener(
     (e) => {
         const pet = e.target
 
-        const walker = walkers.find(obj => obj.id === Number(pet.dataset.walker))
-
         if (pet.dataset.type === "pet") {
-            window.alert(`This pet is walked by ${walker.name}`)
+
+        const walker = walkers.find(obj => obj.id === Number(pet.dataset.walker))
         }
     }
 )
